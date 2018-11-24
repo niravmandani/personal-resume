@@ -1,765 +1,902 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	
-	<!--
-		Basic
-	-->
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
-	<title>Escoby - vCard / Resume / CV Template</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<meta name="description" content="vCard & Resume Template" />
-	<meta name="keywords" content="vcard, resposnive, resume, personal, card, cv, cards, portfolio" />
-	<meta name="author" content="Beeskip" />
-	
-	<!--
-		Load Fonts
-	-->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i&subset=cyrillic" rel="stylesheet">
-	
-	<!-- Load CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" href="css/font-awesome.min.css" />
-	<link rel="stylesheet" href="css/owl.carousel.css" /> 
-	<link rel="stylesheet" href="css/animations.css" /> 
-	<link rel="stylesheet" href="css/magnific-popup.css" /> 
-	<link rel="stylesheet" href="css/style-dark.css" />
-	
-	<!-- Favicons -->
-	<link rel="shortcut icon" href="images/favicon.png">
 
-	<!--[if lt IE 9]>
-	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	
-	
-	
+<head>
+    <meta charset="utf-8" />
+    <title>Moscow - Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.animatedheadline.css" />
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/skins/yellow.css" />
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldrenrod.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
+	<link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
+	<link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+
+    <!-- Template JS Files -->
+    <script src="js/modernizr.custom.js"></script>
+
 </head>
 
-<body>
-	<!--preloader starts-->
-	<div class="loading">
-		<div class="sk-folding-cube">
-			<div class="sk-cube1 sk-cube"></div>
-			<div class="sk-cube2 sk-cube"></div>
-			<div class="sk-cube4 sk-cube"></div>
-			<div class="sk-cube3 sk-cube"></div>
-		</div>
-	</div>
-	<!-- End Preloader --> 
-	
-	<div class="page">
-		<!-- Header -->
-		<header class="header">
+<body class="dark">
+    <!-- Preloader Start -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- Preloader Ends -->
+    <!-- Live Style Switcher Starts - demo only -->
+    <div id="switcher" class="">
+        <div class="content-switcher">
+            <h4>STYLE SWITCHER</h4>
+            <ul>
+                <li>
+                    <a href="index.html#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="images/styleswitcher/purple.png" alt="purple"/></a>
+                </li>
+                <li>
+                    <a href="index.html#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="images/styleswitcher/red.png" alt="red"/></a>
+                </li>
+                <li>
+                    <a href="index.html#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="images/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
+                </li>
+                <li>
+                    <a href="index.html#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="images/styleswitcher/blue.png" alt="blue"/></a>
+                </li>
+                <li>
+                    <a href="index.html#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="images/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
+                </li>
+                <li>
+                    <a href="index.html#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="images/styleswitcher/magenta.png" alt="magenta"/></a>
+                </li>
+                <li>
+                    <a href="index.html#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="images/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
+                </li>
+                <li>
+                    <a href="index.html#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="images/styleswitcher/orange.png" alt="orange"/></a>
+                </li>
+				<li>
+                    <a href="index.html#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="images/styleswitcher/green.png" alt="green"/></a>
+                </li>
+				<li>
+                    <a href="index.html#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="images/styleswitcher/yellow.png" alt="yellow"/></a>
+                </li>
+            </ul>
+			<h4>BODY SKIN</h4>
 
-			<!-- logo -->
-			<div class="logo">
-				<a href="index.html"><span>Es</span></a>
-			</div>
-
-			<!-- menu -->
-			<div class="top-menu">
-				<ul>
-					<li class="active">
-						<a href="index-dark.html#home-section">
-							<span class="icon fa fa-home"></span>
-							<span class="link">Home</span>
-						</a>
-					</li>
-					<li>
-						<a href="index-dark.html#about-section">
-							<span class="icon fa fa-user"></span>
-							<span class="link">About</span>
-						</a>
-					</li>
-					<li >
-						<a href="index-dark.html#resume-section">
-							<span class="icon fa fa-gear"></span>
-							<span class="link">Resume</span>
-						</a>
-					</li>
-					<li>
-						<a href="index-dark.html#works-section">
-							<span class="icon fa fa-eye"></span>
-							<span class="link">Portfolio</span>
-						</a>
-					</li>
-					<li>
-						<a href="index-dark.html#blog-section">
-							<span class="icon fa fa-newspaper-o"></span>
-							<span class="link">Blog</span>
-						</a>
-					</li>
-					<li>
-						<a href="index-dark.html#contacts-section">
-							<span class="icon fa fa-envelope"></span>
-							<span class="link">Contacts</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-
-			<!-- Started socials -->
-			<div class="social">
-				<a target="_blank" href="index-dark.html#"><span class="icon fa fa-twitter"></span></a>
-				<a target="_blank" href="index-dark.html#"><span class="icon fa fa-facebook"></span></a>
-				<a target="_blank" href="index-dark.html#"><span class="icon fa fa-github"></span></a>
-				<a target="_blank" href="index-dark.html#"><span class="icon fa fa-linkedin"></span></a>
-			</div>
-
-			<!-- Mobile Menu -->
-			<span class="menu-btn">
-				<span class="m-line"></span>
-			</span>
-
-		</header>
-		  
-                 <!-- Home section -->
-			<div class="home-inner hero-sec active " id="home-page">
-				<!-- Started Background -->
-				<div id="particles-bg" class="slide" style="background-image: url('images/bg.jpg');"></div>
-				<div class="centrize full-width">
-					<div class="vertical-center">
-
-						<!-- Started titles -->
-						<div class="title"><span>Johnathan</span> Escoby</div>
-						<div class="subtitle">
-							I am 
-							<div class="typing-title">
-								<p>a <strong>freelancer.</strong></p>
-								<p>a <strong>Designer.</strong></p>
-								<p>a <strong>web developer.</strong></p>
-								<p>a <strong>photographer.</strong></p>
-							</div>
-							<span class="typed-title"></span>
-						</div>
-					</div>
-				</div>
+           <label> <input class="dark_switch" type="radio" name="color_style" id="is_light" value="light" /> Light</label>
+		<label> <input class="dark_switch" type="radio" name="color_style" id="is_dark" value="dark"  checked="checked" />  Dark</label><br>
 			
-            </div>
-
-			
-		<div id="about-section"  class="panel about-me">
-            <div class="section-container">
-				<div class="page-heading container">
-                    <span class="icon"><i class="fa fa-user"></i></span>
-                    <h2>About Me</h2>
-                </div>
-				<div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-12">
-                        <img src="images/about-me.png" alt="img about" class="about img-fluid">
-                    </div>
-                    <div class="col-lg-8 col-md-12">
-                        <h2 class="title-about-me">UI/UX Designer & Developer</h2>
-                        <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                            veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                            consequuntur
-                            <br><br>
-
-                            magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-                            est, qui dolorem ipsum quia dolor si voluptatem quia voluptas sit aspernatur aut
-                            odit aut fugit, sed quia consequuntur
-                        </p>
-                        <a href="index-dark.html#resume-section" class="btn-medium-color">Download CV</a>
-                        <a href="index-dark.html#works-section" class="btn-medium-border">Portfolio</a>
-                    </div>
-                </div>
-            </div>
-			<div class="services" id="services">
-            <h2 class="text-center">Services</h2>
-            <div class="container">
-                <div class="row">
-                    <!-- Box-1 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="box">
-                            <span class="fa fa-cog"></span>
-                            <h3>Creative Design</h3>
-                            <p>Lorem Ipsum simply text of the printing and type setting industry when
-                                an unknown printing simply </p>
-                        </div>
-                    </div>
-                    <!-- Box-2 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="box">
-                            <span class="fa fa-crop"></span>
-                            <h3>Clean Code</h3>
-                            <p>Lorem Ipsum simply  text of the printing and type setting industry when
-                                an unknown printing simply </p>
-                        </div>
-                    </div>
-                    <!-- Box-3 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="box">
-                            <span class="fa fa-cubes"></span>
-                            <h3>Responsive Design</h3>
-                            <p>Lorem Ipsum simply  text of the printing and type setting industry when
-                                an unknown printing simply </p>
-                        </div>
-                    </div>
-                    <!-- Box-4 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="box">
-                            <span class="fa fa-pie-chart"></span>
-                            <h3>Bootstrap 4</h3>
-                            <p>Lorem Ipsum simply  text of the printing and type setting industry when
-                                an unknown printing simply </p>
-                        </div>
-                    </div>
-                    <!-- Box-5 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="box">
-                            <span class="fa fa-code"></span>
-                            <h3>Font Icons</h3>
-                            <p>Lorem Ipsum simply  text of the printing and type setting industry when
-                                an unknown printing simply </p>
-                        </div>
-                    </div>
-                    <!-- Box-6 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="box">
-                            <span class="fa fa-bar-chart"></span>
-                            <h3>Awesome Support</h3>
-                            <p>Lorem Ipsum simply  text of the printing and type setting industry when
-                                an unknown printing simply </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <a href="" class="waves-effect waves-light btn font-weight-700 purchase hoverable"><i class="fa fa-shopping-cart"></i> Purchase</a>
+            <div id="hideSwitcher">&times;</div>
         </div>
-		<!--Clients-->
-          <section class="clients">
-			<h2 class="text-center">My lovely clients</h2>
-          	<div class="container">
-              <!--Logo Carousel Widget-->
-              <div class="owl-carousel owl-theme">
-              	<a href="index-dark.html#"><img src="images/clients/1.png" class="img-resposnive" alt="BBC News"/></a>
-                <a href="index-dark.html#"><img src="images/clients/2.png" class="img-resposnive" alt="The Gardian"/></a>
-                <a href="index-dark.html#"><img src="images/clients/3.png" class="img-resposnive" alt="TNW"/></a>
-                <a href="index-dark.html#"><img src="images/clients/4.png" class="img-resposnive" alt="Wired"/></a>
-                <a href="index-dark.html#"><img src="images/clients/5.png" class="img-resposnive" alt="Mashable"/></a>
-                <a href="index-dark.html#"><img src="images/clients/6.png" class="img-resposnive" alt="TEDx"/></a>
-              </div>
-          	</div>
-          </section><!--Clients Close-->
-		<div class="some-facts">
-			<h2 class="text-center">Fun Facts</h2>
-            <div class="container text-center">
-                <div class="row">
-                    <!-- Box-1 -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="items">
-                            <span class="fa fa-skyatlas"></span>
-                            <h3>
-                                <span class="counter">9</span></h3>
-                            <div class="line mx-auto"></div>
-                            <h4>Happy Clients</h4>
-                        </div>
-                    </div>
-                    <!-- Box-2 -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="items">
-                            <span class="fa fa-heart-o"></span>
-                            <h3>
-                                <span class="counter">24</span></h3>
-                            <div class="line mx-auto"></div>
-                            <h4>Projects Compleated</h4>
-                        </div>
-                    </div>
-                    <!-- Box-3 -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="items">
-                            <span class="fa fa-globe"></span>
-                            <h3>
-                                <span class="counter">11</span></h3>
-                            <div class="line mx-auto"></div>
-                            <h4>Files Downloaded</h4>
-                        </div>
-                    </div>
-                    <!-- Box-4 -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="items">
-                            <span class="fa fa-user"></span>
-                            <h3>
-                                <span class="counter">152</span></h3>
-                            <div class="line mx-auto"></div>
-                            <h4>Liens Of Code</h4>
+    </div>
+    <div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+    <!-- Live Style Switcher Ends - demo only -->
+    <!-- Wrapper Starts -->
+    <div class="wrapper">
+		<div class="main-picture woman hide-on-med-and-down">
+		</div>
+        <div id="bl-main" class="bl-main">
+            <!-- Top Left Section Starts -->
+            <section class="topleft">
+                <div class="bl-box row valign-wrapper">
+                    <div class="row valign-wrapper mb-0">
+                        <div class="title-heading">
+                            <div class="selector uppercase" id="selector">
+                                <h3 class="ah-headline p-none m-none">
+                                    <span class="font-weight-400">Hi There ! I'm</span>
+									<span class="my-name">Nirav Mandani</span>
+                                    <span class="ah-words-wrapper">
+										<b class="is-visible">Android Developer</b>
+										<b>Android Developer</b>
+                                    </span>
+                                </h3>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
+            <!-- Top Left Section Ends -->
+            <!-- About Section Starts -->
+            <section>
+                <!-- About Title Starts -->
+                <div class="bl-box valign-wrapper">
+                    <div class="page-title center-align">
+                        <h2 class="center-align">
+                            <span data-hover="About">About </span>
+                            <span data-hover="Me">Me</span>
+                        </h2>
+                    </div>
+                </div>
+                <!-- About Title Ends -->
+                <!-- About Expanded Starts -->
+                <div class="bl-content">
+                    <!-- Main Heading Starts -->
+                    <div class="container page-title custom-page-title">
+                        <h2 class="center-align">
+                            <span>About</span>
+                            <span>Me</span>
+                        </h2>
+                    </div>
+                    <!-- Main Heading Ends -->
+                    <div class="container infos">
+						<!-- Divider Starts -->
+                        <div class="divider center-align">
+                            <span class="outer-line"></span>
+                            <span class="fa fa-vcard" aria-hidden="true"></span>
+                            <span class="outer-line"></span>
+                        </div>
+						<!-- Divider Ends -->
+						<!-- Personal Informations Starts -->
+                        <div class="row">
+							<!-- Picture Starts -->
+                            <div class="col s12 m4 profile-picture show-on-medium-and-down section-padding">
+								<img src="images/woman.jpg" class="responsive-img my-picture" alt="My Photo">
+                            </div>
+							<!-- Picture Ends -->
+                            <div class="col s12 m8 l12 xl12 personal-info section-padding">
+                                <h6 class="uppercase"><i class="fa fa-user"></i> Personal Info</h6>
+								<div class="col m12 l12 xl9 p-none">
+									<p class="second-font">I'm a Freelance Web Designer & Developer based in Moscow, Russia.
+									I have serious passion for UI effects, animations and creating intuitive, 
+									with over a decade of experience.
+									</p>
+								</div>
+                                <div class="col s12 m12 l6 p-none">
+                                    <ul class="second-font list-1">
+                                        <li><span class="font-weight-700">First Name: </span>Linda</li>
+                                        <li><span class="font-weight-700">Last Name: </span>Smith</li>
+                                        <li><span class="font-weight-700">Date of birth: </span>21 june 1990 </li>
+                                        <li><span class="font-weight-700">Nationality: </span>Russian</li>
+										<li><span class="font-weight-700">Freelance: </span>Available</li>
+                                    </ul>
+                                </div>
+                                <div class="col s12 m12 l6 p-none">
+                                    <ul class="second-font list-2">
+                                        <li><span class="font-weight-700">Phone: </span>+34 21 18 40 10</li>
+                                        <li><span class="font-weight-700">Address: </span>Moscow, Russia</li>
+                                        <li><span class="font-weight-700">Email: </span>you@yourwebsite.com</li>
+                                        <li><span class="font-weight-700">Spoken Langages: </span>French - German</li>
+										<li><span class="font-weight-700">Skype: </span>linda.smith</li>
+                                    </ul>
+                                </div>
+                                <a href="index.html#" class="btn font-weight-700">
+									Download Resume <i class="fa fa-file-pdf-o"></i>
+								</a>
+								<a href="New%20Folder/blog-dark.html" class="btn btn-blog font-weight-700">
+									My Blog <i class="fa fa-edit"></i>
+								</a>
+                            </div>
+                        </div>
+						<!-- Personal Informations Ends -->
+                    </div>
+					<!-- Resume Starts -->
+					<div class="resume-container">
+                        <div class="container">
+                            <div class="valign-wrapper row">
+								<!-- Resume Menu Starts -->
+                                <div class="resume-list col l4 section-padding">
+                                    <div class="resume-list-item is-active" data-index="0" id="resume-list-item-0">
+                                        <div class="resume-list-item-inner">
+                                            <h6 class="resume-list-item-title uppercase"><i class="fa fa-briefcase"></i> Experience</h6>
+                                        </div>
+                                    </div>
+                                    <div class="resume-list-item" data-index="1" id="resume-list-item-1">
+                                        <div class="resume-list-item-inner">
+                                            <h6 class="resume-list-item-title uppercase"><i class="fa fa-graduation-cap"></i> Education</h6>
+                                        </div>
+                                    </div>
+                                    <div class="resume-list-item" data-index="2" id="resume-list-item-2">
+                                        <div class="resume-list-item-inner">
+                                            <h6 class="resume-list-item-title uppercase"><i class="fa fa-star"></i> Skills</h6>
+                                        </div>
+                                    </div>
+                                </div>
+								<!-- Resume Menu Ends -->
+								<!-- Resume Content Starts -->
+                                <div class="col s12 m12 l8 resume-cards-container section-padding">
+                                    <div class="resume-cards">
+										<!-- Experience Starts -->
+                                        <div class="resume-card resume-card-0" data-index="0">
+											<!-- Experience Header Title Starts -->
+                                            <div class="resume-card-header">
+                                                <div class="resume-card-name"><i class="fa fa-briefcase"></i> Experience</div>
+                                            </div>
+											<!-- Experience Header Title Ends -->
+											<!-- Experience Content Starts -->
+                                            <div class="resume-card-body experience">
+                                                <div class="resume-card-body-container second-font">
+													<!-- Single Experience Starts -->
+                                                    <div class="resume-content">
+														<h6 class="uppercase"><span>Web Designer - </span>Envato</h6>
+														<span class="date"><i class="fa fa-calendar-o"></i> 2015 - 2018</span>
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                                                    </div>
+													<!-- Single Experience Ends -->
+                                                    <span class="separator"></span>
+													<!-- Single Experience Starts -->
+                                                    <div class="resume-content">
+														<h6 class="uppercase"><span>Web Developer - </span>Google</h6>
+														<span class="date"><i class="fa fa-calendar-o"></i> 2011 - 2015</span>
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                                                    </div>
+													<!-- Single Experience Ends -->
+                                                    <span class="separator"></span>
+													<!-- Single Experience Starts -->
+                                                    <div class="resume-content">
+														<h6 class="uppercase"><span>Community Manager - </span>Adobe</h6>
+														<span class="date"><i class="fa fa-calendar-o"></i> 2007 - 2011</span>
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                                                    </div>
+													<!-- Single Experience Ends -->
+                                                </div>
+                                            </div>
+											<!-- Experience Content Starts -->
+                                        </div>
+										<!-- Experience Ends -->
+										<!-- Education Starts -->
+                                        <div class="resume-card resume-card-1" data-index="1">
+											<!-- Education Header Title Starts -->
+                                            <div class="resume-card-header">
+                                                <div class="resume-card-name"><i class="fa fa-graduation-cap"></i> Education</div>
+                                            </div>
+											<!-- Education Header Title Starts -->
+                                            <div class="resume-card-body education">
+                                                <div class="resume-card-body-container second-font">
+													<!-- Single Education Starts -->
+                                                    <div class="resume-content">
+														<h6 class="uppercase"><span>Engineering Diploma - </span>Oxford University</h6>
+														<span class="date"><i class="fa fa-calendar-o"></i> 2015 - 2018</span>
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                                                    </div>
+													<!-- Single Education Ends -->
+                                                    <span class="separator"></span>
+													<!-- Single Education Starts -->
+                                                    <div class="resume-content">
+														<h6 class="uppercase"><span>Masters Degree - </span>Paris University</h6>
+														<span class="date"><i class="fa fa-calendar-o"></i> 2011 - 2015</span>
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                                                    </div>
+													<!-- Single Education Ends -->
+                                                    <span class="separator"></span>
+													<!-- Single Education Starts -->
+                                                    <div class="resume-content">
+														<h6 class="uppercase"><span>Bachelor Degree - </span>Berlin Higher Institute</h6>
+														<span class="date"><i class="fa fa-calendar-o"></i> 2007 - 2011</span>
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+                                                    </div>
+													<!-- Single Education Ends -->
+                                                </div>
+                                            </div>
+                                        </div>
+										<!-- Education Ends -->
+										<!-- Skills Starts -->
+                                        <div class="resume-card resume-card-2" data-index="2">
+											<!-- Skills Header Title Starts -->
+                                            <div class="resume-card-header">
+                                                <div class="resume-card-name"><i class="fa fa-star"></i> Skills</div>
+                                            </div>
+											<!-- Skills Header Title Starts -->
+                                            <div class="resume-card-body skills">
+                                                <div class="resume-card-body-container second-font">
+                                                    <div class="row">
+														<!-- Skills Row Starts -->
+                                                        <div class="col s6">
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">html</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">javascript</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-empty"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">css</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-empty"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">php</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">jquery</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">angular js</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+                                                        </div>
+														<!-- Skills Row Ends -->
+														<!-- Skills Row Starts -->
+                                                        <div class="col s6">
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">wordpress</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-empty"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">joomla</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-empty"></i> <i class="fa fa-star-o"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">magento</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">drupal</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">Adobe Photoshop</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">Adobe illustrator</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-empty"></i> <i class="fa fa-star-o"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+                                                        </div>
+														<!-- Skills Row Ends -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+										<!-- Skills Ends -->
+                                    </div>
+                                </div>
+								<!-- Resume Content Ends -->
+                            </div>
+                        </div>
+                    </div>
+					<!-- Resume Ends -->
+					<!-- Fun Facts Starts -->
+                    <div class="container badges">
+                        <div class="row">
+                            <!-- Fact Badge Item Starts -->
+                            <div class="col s12 m4 l4 center-align">
+                                <h3>
+                                    <i class="fa fa-briefcase"></i>
+									<span class="font-weight-900">4+</span>
+                                </h3>
+                                <h6 class="uppercase font-weight-700">Years Experience</h6>
+                            </div>
+                            <!-- Fact Badge Item Ends -->
+                            <!-- Fact Badge Item Starts -->
+                            <div class="col s12 m4 l4 center-align">
+                                <h3>
+                                    <i class="fa fa-handshake-o"></i>
+									<span class="font-weight-900">89+</span>
+                                </h3>
+                                <h6 class="uppercase font-weight-700">Done Projects</h6>
+                            </div>
+                            <!-- Fact Badge Item Ends -->
+                            <!-- Fact Badge Item Starts -->
+                            <div class="col s12 m4 l4 center-align">
+                                 <h3>
+                                    <i class="fa fa-heart-o"></i>
+									<span class="font-weight-900">77+</span>
+                                </h3>
+                                <h6 class="uppercase font-weight-700">Happy customers</h6>
+                            </div>
+                            <!-- Fact Badge Item Ends -->
+                        </div>
+                    </div>
+					<!-- Fun Facts Ends -->
+                </div>
+                <!-- End Expanded About -->
+                <img alt="close" src="images/close-button.png" class="bl-icon-close" />
+            </section>
+            <!-- About Ends -->
+            <!-- Portfolio Starts -->
+            <section id="bl-work-section">
+				<!-- Portfolio Title Starts -->
+                <div class="bl-box valign-wrapper">
+                    <div class="page-title center-align">
+                        <h2 class="center-align">
+                            <span data-hover="my">my </span>
+                            <span data-hover="portfolio">portfolio</span>
+                        </h2>
+                    </div>
+                </div>
+				<!-- Portfolio Title Ends -->
+                <!-- Portfolio Expanded Starts -->
+                <div class="bl-content">
+                    <!-- Main Heading Starts -->
+                    <div class="container page-title center-align">
+                        <h2 class="center-align">
+                            <span data-hover="my">my </span>
+                            <span data-hover="portfolio">portfolio</span>
+                        </h2>
+                    </div>
+                    <!-- Main Heading Ends -->
+                    <div class="container">
+                        <!-- Divider Starts -->
+                        <div class="divider center-align">
+                            <span class="outer-line"></span>
+                            <span class="fa fa-suitcase" aria-hidden="true"></span>
+                            <span class="outer-line"></span>
+                        </div>
+                        <!-- Divider Ends -->
+                        <div class="row center-align da-thumbs" id="bl-work-items">
+                            <!-- Project Starts -->
+                            <div class="col s12 m6 l6 xl4" data-panel="panel-1">
+                                <a href="index.html#">
+									<img class="responsive-img" src="images/projects/project-1.jpg" alt="Project" />
+									<div class="valign-wrapper"><span class="font-weight-700 uppercase">Image Project</span></div>
+								</a>
+                            </div>
+                            <!-- Project Ends -->
+                            <!-- Project Starts -->
+                            <div class="col s12 m6 l6 xl4" data-panel="panel-2">
+                                <a href="index.html#">
+									<img class="responsive-img" src="images/projects/project-2.jpg" alt="Project" />
+									<div class="valign-wrapper"><span class="font-weight-700 uppercase">Slider Project</span></div>
+								</a>
+                            </div>
+                            <!-- Project Ends -->
+                            <!-- Project Starts -->
+                            <div class="col s12 m6 l6 xl4" data-panel="panel-3">
+                                <a href="index.html#">
+									<img class="responsive-img" src="images/projects/project-3.jpg" alt="Project" />
+									<div class="valign-wrapper"><span class="font-weight-700 uppercase">Youtube Video</span></div>
+								</a>
+                            </div>
+                            <!-- Project Ends -->
+                            <!-- Project Starts -->
+                            <div class="col s12 m6 l6 xl4" data-panel="panel-4">
+                                <a href="index.html#">
+									<img class="responsive-img" src="images/projects/project-4.jpg" alt="Project" />
+									<div class="valign-wrapper"><span class="font-weight-700 uppercase">Local Video</span></div>
+								</a>
+                            </div>
+                            <!-- Project Ends -->
+                            <!-- Project Starts -->
+                            <div class="col s12 m6 l6 xl4" data-panel="panel-5">
+                                <a href="index.html#">
+									<img class="responsive-img" src="images/projects/project-5.jpg" alt="Project" />
+									<div class="valign-wrapper"><span class="font-weight-700 uppercase">Image Project</span></div>
+								</a>
+                            </div>
+                            <!-- Project Ends -->
+                            <!-- Project Starts -->
+                            <div class="col s12 m6 l6 xl4" data-panel="panel-6">
+                                <a href="index.html#">
+									<img class="responsive-img" src="images/projects/project-6.jpg" alt="Project" />
+									<div class="valign-wrapper"><span class="font-weight-700 uppercase">Image Project</span></div>
+								</a>
+                            </div>
+                            <!-- Project Ends -->
+                            <!-- Project Starts -->
+                            <div class="col s12 m6 l6 xl4" data-panel="panel-7">
+                                <a href="index.html#">
+									<img class="responsive-img" src="images/projects/project-7.jpg" alt="Project" />
+									<div class="valign-wrapper"><span class="font-weight-700 uppercase">Image Project</span></div>
+								</a>
+                            </div>
+                            <!-- Project Ends -->
+                            <!-- Project Starts -->
+                            <div class="col s12 m6 l6 xl4" data-panel="panel-8">
+                                <a href="index.html#">
+									<img class="responsive-img" src="images/projects/project-8.jpg" alt="Project" />
+									<div class="valign-wrapper"><span class="font-weight-700 uppercase">Image Project</span></div>
+								</a>
+                            </div>
+                            <!-- Project Ends -->
+							<!-- Project Starts -->
+                            <div class="col s12 m6 l6 xl4" data-panel="panel-9">
+                                <a href="index.html#">
+									<img class="responsive-img" src="images/projects/project-9.jpg" alt="Project" />
+									<div class="valign-wrapper"><span class="font-weight-700 uppercase">Image Project</span></div>
+								</a>
+                            </div>
+                            <!-- Project Ends -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Expanded Ends -->
+                <img alt="close" src="images/close-button.png" class="bl-icon-close" />
+            </section>
+            <!-- Portfolio Section Ends -->
+            <!-- Contact Section Starts -->
+            <section>
+				<!-- Contact Title Starts -->
+                <div class="bl-box valign-wrapper">
+                    <div class="page-title center-align">
+                        <h2 class="center-align">
+                            <span data-hover="get">get </span>
+                            <span data-hover="in touch">in touch</span>
+                        </h2>
+                    </div>
+                </div>
+				<!-- Contact Title Ends -->
+                <!-- Expanded Contact Starts -->
+                <div class="bl-content">
+                    <!-- Main Heading Starts -->
+                    <div class="container page-title center-align">
+                        <h2 class="center-align">
+                            <span data-hover="get">get </span>
+                            <span data-hover="in touch">in touch</span>
+                        </h2>
+                    </div>
+                    <!-- Main Heading Ends -->
+                    <div class="container">
+                        <!-- Divider Starts -->
+                        <div class="divider center-align">
+                            <span class="outer-line"></span>
+                            <span class="fa fa-envelope-open" aria-hidden="true"></span>
+                            <span class="outer-line"></span>
+                        </div>
+                        <!-- Divider Ends -->
+                        <div class="row contact section-padding">
+							<!-- Contact Infos Starts -->
+                            <div class="col s12 m5 l5 xl4 leftside">
+								<!-- Contacts Starts -->
+                                <h6 class="font-weight-700 uppercase">Phone</h6>
+                                <span class="font-weight-400 second-font"><i class="fa fa-phone"></i> +34 62 11 84 01</span>
+								<h6 class="font-weight-700 uppercase">Email</h6>
+								<span class="font-weight-400 second-font"><i class="fa fa-envelope"></i> you@youwebsite.com</span>
+								<h6 class="font-weight-700 uppercase">Skype</h6>
+								<span class="font-weight-400 second-font"><i class="fa fa-skype"></i> linda.smith</span>
+								<h6 class="font-weight-700 uppercase">Address</h6>
+								<span class="font-weight-400 second-font"><i class="fa fa-home"></i>  Moscow, Russia</span><br>
+								<!-- Contacts Ends -->
+								<!-- Social Media Profiles Starts -->
+                                <h6 class="font-weight-700 uppercase">Social Profiles</h6>
+                                <div class="social">
+                                    <ul class="list-inline social social-intro center-align p-none">
+                                        <li class="facebook"><a href="index.html#"><i class="fa fa-facebook"></i></a></li>
+                                        <li class="twitter"><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="google-plus"><a href="index.html#"><i class="fa fa-google-plus"></i></a></li>
+                                        <li class="linkedin"><a href="index.html#"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+								<!-- Social Media Profiles Ends -->
+                            </div>
+							<!-- Contact Infos Ends -->
+							<!-- Contact Form Starts -->
+                            <div class="col s12 m7 l7 xl8 rightside">
+								<h6 class="uppercase m-none font-weight-700">Feel free to drop me a line</h6>
+								<div class="row">
+									<p class="col s12 m12 l12 xl10 second-font">
+										If you have any suggestion, project or even you want to say Hello.. Please fill out the form below and I will reply you shortly.
+									</p>
+								</div>
+                                <form class="contactform" method="post" action="php/process-form.php">
+                                    <!-- Name Field Starts -->
+                                    <div class="input-field second-font">
+                                        <i class="fa fa-user prefix"></i>
+                                        <input id="name" name="name" type="text" class="validate" required>
+                                        <label class="font-weight-400" for="name">Your Name</label>
+                                    </div>
+                                    <!-- Name Field Ends -->
+                                    <!-- Email Field Starts -->
+                                    <div class="input-field second-font">
+                                        <i class="fa fa-envelope prefix"></i>
+                                        <input id="email" type="email" name="email" class="validate" required>
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                    <!-- Email Field Ends -->
+                                    <!-- Comment Textarea Starts -->
+                                    <div class="input-field second-font">
+                                        <i class="fa fa-comments prefix"></i>
+                                        <textarea id="comment" name="comment" class="materialize-textarea" required></textarea>
+                                        <label for="comment">Your Comment</label>
+                                    </div>
+                                    <!-- Comment Textarea Ends -->
+									<!-- Submit Form Button Starts -->
+                                    <div class="col s12 m12 l9 xl8 submit-form">
+                                        <button class="btn font-weight-700" type="submit" name="send">
+											Send Message <i class="fa fa-send"></i>
+										</button>
+                                    </div>
+                                    <!-- Submit Form Button Ends -->
+                                    <div class="col s12 m12 l8 xl8 form-message">
+                                        <span class="output_message center-align font-weight-700 uppercase"></span>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- Contact Form Ends -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Expanded Contact Ends -->
+                <img alt="close" src="images/close-button.png" class="bl-icon-close" />
+            </section>
+            <!-- Contact Section Ends -->
+            <!-- Portfolio Panel Items Starts -->
+            <div class="bl-panel-items" id="bl-panel-work-items">
+				<!-- Project Starts -->
+                <div data-panel="panel-1">
+                    <div class="row">
+                        <!-- Project Main Content Starts -->
+                        <div class="col s12 l6 xl6 section-padding section-padding-right-none">
+                            <img class="responsive-img" src="images/projects/project-1.jpg" alt="project" />
+                        </div>
+                        <!-- Project Main Content Ends -->
+                        <!-- Project Details Starts -->
+                        <div class="col s12 l6 xl6 section-padding">
+                            <h3 class="font-weight-700 uppercase">Image Project</h3>
+                            <ul class="project-details second-font">
+                                <li><i class="fa fa-user"></i><span class="font-weight-700"> Client </span>: <span class="font-weight-400 uppercase">Envato</span></li>
+                                <li><i class="fa fa-calendar-o"></i><span class="font-weight-700"> Start Date </span>: <span class="font-weight-400 uppercase">02/11/2017</span></li>
+								<li><i class="fa fa-calendar-check-o"></i><span class="font-weight-700"> End Date </span>: <span class="font-weight-400 uppercase">02/08/2018</span></li>
+                                <li><i class="fa fa-cogs"></i> <span class="font-weight-700"> Used Technologies</span> : <span class="font-weight-400 uppercase">php, html, css, javascript</span></li>
+                            </ul>
+                            <hr>
+                            <a href="index.html#" class="waves-effect waves-light btn font-weight-700">Preview <i class="fa fa-external-link"></i></a>
+                        </div>
+                        <!-- Project Details Ends -->
+                    </div>
+                </div>
+				<!-- Project Ends -->
+				<!-- Project Starts -->
+                <div data-panel="panel-2">
+                    <div class="row">
+                        <!-- Project Main Content Starts -->
+                        <div class="col s12 l6 xl6 section-padding section-padding-right-none">
+                            <div class="carousel carousel-slider">
+                                <a class="carousel-item" href="index.html#one!"><img class="responsive-img" src="images/projects/project-2.jpg" alt="project" ></a>
+                                <a class="carousel-item" href="index.html#two!"><img class="responsive-img" src="images/projects/project-1.jpg" alt="project" ></a>
+                                <a class="carousel-item" href="index.html#three!"><img class="responsive-img" src="images/projects/project-3.jpg" alt="project" ></a>
+                                <a class="carousel-item" href="index.html#four!"><img class="responsive-img" src="images/projects/project-4.jpg" alt="project" ></a>
+                            </div>
+                        </div>
+                        <!-- Project Main Content Ends -->
+                        <!-- Project Details Starts -->
+                        <div class="col s12 l6 xl6 section-padding">
+                            <h3 class="font-weight-700 uppercase">Slider Project</h3>
+                            <ul class="project-details second-font">
+                                <li><i class="fa fa-user"></i><span class="font-weight-700"> Client </span>: <span class="font-weight-400 uppercase">Themeforest</span></li>
+                                <li><i class="fa fa-calendar-o"></i><span class="font-weight-700"> Start Date </span>: <span class="font-weight-400 uppercase">02/11/2017</span></li>
+								<li><i class="fa fa-calendar-check-o"></i><span class="font-weight-700"> End Date </span>: <span class="font-weight-400 uppercase">02/08/2018</span></li>
+                                <li><i class="fa fa-cogs"></i> <span class="font-weight-700"> Used Technologies</span> : <span class="font-weight-400 uppercase">php, html, css, javascript</span></li>
+                            </ul>
+                            <hr>
+                            <a href="index.html#" class="waves-effect waves-light btn font-weight-700">Preview <i class="fa fa-external-link"></i></a>
+                        </div>
+                        <!-- Project Details Ends -->
+                    </div>
+                </div>
+				<!-- Project Ends -->
+				<!-- Project Starts -->
+                <div data-panel="panel-3">
+                    <div class="row">
+                        <!-- Project Main Content Starts -->
+                        <div class="col s12 l6 xl6 section-padding section-padding-right-none">
+                            <div class="videocontainer">
+                                <iframe class="youtube-video" src="https://www.youtube.com/embed/7e90gBu4pas?enablejsapi=1&version=3&playerapiid=ytplayer" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <!-- Project Main Content Ends -->
+                        <!-- Project Details Starts -->
+                        <div class="col s12 l6 xl6 section-padding">
+                            <h3 class="font-weight-700 uppercase">Youtube Video</h3>
+                            <ul class="project-details second-font">
+                                <li><i class="fa fa-user"></i><span class="font-weight-700"> Client </span>: <span class="font-weight-400 uppercase">Photodune</span></li>
+                                <li><i class="fa fa-calendar-o"></i><span class="font-weight-700"> Start Date </span>: <span class="font-weight-400 uppercase">02/11/2017</span></li>
+								<li><i class="fa fa-calendar-check-o"></i><span class="font-weight-700"> End Date </span>: <span class="font-weight-400 uppercase">02/08/2018</span></li>
+                                <li><i class="fa fa-cogs"></i> <span class="font-weight-700"> Used Technologies</span> : <span class="font-weight-400 uppercase">Adobe After Effects, Adobe Audition</span></li>
+                            </ul>
+                            <hr>
+                            <a href="index.html#" class="waves-effect waves-light btn font-weight-700">Preview <i class="fa fa-external-link"></i></a>
+                        </div>
+                        <!-- Project Details Ends -->
+                    </div>
+                </div>
+				<!-- Project Ends -->
+				<!-- Project Starts -->
+                <div data-panel="panel-4">
+                    <div class="row">
+                        <!-- Project Main Content Starts -->
+                        <div class="col s12 l6 xl6 section-padding section-padding-right-none">
+                            <video id="video" class="responsive-video" controls poster="images/projects/video/video-poster.png">
+								<source src="images/projects/video/video.mp4" type="video/mp4">
+							</video>
+                        </div>
+                        <!-- Project Main Content Ends -->
+                        <!-- Project Details Starts -->
+                        <div class="col s12 l6 xl6 section-padding">
+                            <h3 class="font-weight-700 uppercase">Local Video</h3>
+                            <ul class="project-details second-font">
+                                <li><i class="fa fa-user"></i><span class="font-weight-700"> Client </span>: <span class="font-weight-400 uppercase">Videohive</span></li>
+                                <li><i class="fa fa-calendar-o"></i><span class="font-weight-700"> Start Date </span>: <span class="font-weight-400 uppercase">02/11/2017</span></li>
+								<li><i class="fa fa-calendar-check-o"></i><span class="font-weight-700"> End Date </span>: <span class="font-weight-400 uppercase">02/08/2018</span></li>
+                                <li><i class="fa fa-cogs"></i> <span class="font-weight-700"> Used Technologies</span> : <span class="font-weight-400 uppercase">Adobe After Effects, Movie Maker</span></li>
+                            </ul>
+                            <hr>
+                            <a href="index.html#" class="waves-effect waves-light btn font-weight-700">Preview <i class="fa fa-external-link"></i></a>
+                        </div>
+                        <!-- Project Details Ends -->
+                    </div>
+                </div>
+				<!-- Project Ends -->
+				<!-- Project Starts -->
+                <div data-panel="panel-5">
+                    <div class="row">
+                        <!-- Project Main Content Starts -->
+                        <div class="col s12 l6 xl6 section-padding section-padding-right-none">
+                            <img src="images/projects/project-5.jpg" alt="project" />
+                        </div>
+                        <!-- Project Main Content Ends -->
+                        <!-- Project Details Starts -->
+                        <div class="col s12 l6 xl6 section-padding">
+                            <h3 class="font-weight-700 uppercase">Image Project</h3>
+                            <ul class="project-details second-font">
+                                <li><i class="fa fa-user"></i><span class="font-weight-700"> Client </span>: <span class="font-weight-400 uppercase">Graphicriver</span></li>
+                                <li><i class="fa fa-calendar-o"></i><span class="font-weight-700"> Start Date </span>: <span class="font-weight-400 uppercase">02/11/2017</span></li>
+								<li><i class="fa fa-calendar-check-o"></i><span class="font-weight-700"> End Date </span>: <span class="font-weight-400 uppercase">02/08/2018</span></li>
+                                <li><i class="fa fa-cogs"></i> <span class="font-weight-700"> Used Technologies</span> : <span class="font-weight-400 uppercase">Adobe Photoshop, Gimp</span></li>
+                            </ul>
+                            <hr>
+                            <a href="index.html#" class="waves-effect waves-light btn font-weight-700">Preview <i class="fa fa-external-link"></i></a>
+                        </div>
+                        <!-- Project Details Ends -->
+                    </div>
+                </div>
+				<!-- Project Ends -->
+				<!-- Project Starts -->
+                <div data-panel="panel-6">
+                    <div class="row">
+                        <!-- Project Main Content Starts -->
+                        <div class="col s12 l6 xl6 section-padding section-padding-right-none">
+                            <img src="images/projects/project-6.jpg" alt="project" />
+                        </div>
+                        <!-- Project Main Content Ends -->
+                        <!-- Project Details Starts -->
+                        <div class="col s12 l6 xl6 section-padding">
+                            <h3 class="font-weight-700 uppercase">Image Project</h3>
+                            <ul class="project-details second-font">
+                                <li><i class="fa fa-user"></i><span class="font-weight-700"> Client </span>: <span class="font-weight-400 uppercase">Activeden</span></li>
+                                <li><i class="fa fa-calendar-o"></i><span class="font-weight-700"> Start Date </span>: <span class="font-weight-400 uppercase">02/11/2017</span></li>
+								<li><i class="fa fa-calendar-check-o"></i><span class="font-weight-700"> End Date </span>: <span class="font-weight-400 uppercase">02/08/2018</span></li>
+                                <li><i class="fa fa-cogs"></i> <span class="font-weight-700"> Used Technologies</span> : <span class="font-weight-400 uppercase">Adobe Flash, Paint</span></li>
+                            </ul>
+                            <hr>
+                            <a href="index.html#" class="waves-effect waves-light btn font-weight-700">Preview <i class="fa fa-external-link"></i></a>
+                        </div>
+                        <!-- Project Details Ends -->
+                    </div>
+                </div>
+				<!-- Project Ends -->
+				<!-- Project Starts -->
+                <div data-panel="panel-7">
+                    <div class="row">
+                        <!-- Project Main Content Starts -->
+                        <div class="col s12 l6 xl6 section-padding section-padding-right-none">
+                            <img src="images/projects/project-7.jpg" alt="project" />
+                        </div>
+                        <!-- Project Main Content Ends -->
+                        <!-- Project Details Starts -->
+                        <div class="col s12 l6 xl6 section-padding">
+                            <h3 class="font-weight-700 uppercase">Image Project</h3>
+                            <ul class="project-details second-font">
+                                <li><i class="fa fa-user"></i><span class="font-weight-700"> Client </span>: <span class="font-weight-400 uppercase">3D Ocean</span></li>
+                                <li><i class="fa fa-calendar-o"></i><span class="font-weight-700"> Start Date </span>: <span class="font-weight-400 uppercase">02/11/2017</span></li>
+								<li><i class="fa fa-calendar-check-o"></i><span class="font-weight-700"> End Date </span>: <span class="font-weight-400 uppercase">02/08/2018</span></li>
+                                <li><i class="fa fa-cogs"></i> <span class="font-weight-700"> Used Technologies</span> : <span class="font-weight-400 uppercase">3DS Max, Adobe Photoshop</span></li>
+                            </ul>
+                            <hr>
+                            <a href="index.html#" class="waves-effect waves-light btn font-weight-700">Preview <i class="fa fa-external-link"></i></a>
+                        </div>
+                        <!-- Project Details Ends -->
+                    </div>
+                </div>
+				<!-- Project Ends -->
+				<!-- Project Starts -->
+                <div data-panel="panel-8">
+                    <div class="row">
+                        <!-- Project Main Content Starts -->
+                        <div class="col s12 l6 xl6 section-padding section-padding-right-none">
+                            <img src="images/projects/project-8.jpg" alt="project" />
+                        </div>
+                        <!-- Project Main Content Ends -->
+                        <!-- Project Details Starts -->
+                        <div class="col s12 l6 xl6 section-padding">
+                            <h3 class="font-weight-700 uppercase">Image Project</h3>
+                            <ul class="project-details second-font">
+                                <li><i class="fa fa-user"></i><span class="font-weight-700"> Client </span>: <span class="font-weight-400 uppercase">Audiojungle</span></li>
+                                <li><i class="fa fa-calendar-o"></i><span class="font-weight-700"> Start Date </span>: <span class="font-weight-400 uppercase">02/11/2017</span></li>
+								<li><i class="fa fa-calendar-check-o"></i><span class="font-weight-700"> End Date </span>: <span class="font-weight-400 uppercase">02/08/2018</span></li>
+                                <li><i class="fa fa-cogs"></i> <span class="font-weight-700"> Used Technologies</span> : <span class="font-weight-400 uppercase">Adobe Audition, Adobe Premiere</span></li>
+                            </ul>
+                            <hr>
+                            <a href="index.html#" class="waves-effect waves-light btn font-weight-700">Preview <i class="fa fa-external-link"></i></a>
+                        </div>
+                        <!-- Project Details Ends -->
+                    </div>
+                </div>
+				<!-- Project Ends -->
+				<!-- Project Starts -->
+                <div data-panel="panel-9">
+                    <div class="row">
+                        <!-- Project Main Content Starts -->
+                        <div class="col s12 l6 xl6 section-padding section-padding-right-none">
+                            <img src="images/projects/project-9.jpg" alt="project" />
+                        </div>
+                        <!-- Project Main Content Ends -->
+                        <!-- Project Details Starts -->
+                        <div class="col s12 l6 xl6 section-padding">
+                            <h3 class="font-weight-700 uppercase">Image Project</h3>
+                            <ul class="project-details second-font">
+                                <li><i class="fa fa-user"></i><span class="font-weight-700"> Client </span>: <span class="font-weight-400 uppercase">Audiojungle</span></li>
+                                <li><i class="fa fa-calendar-o"></i><span class="font-weight-700"> Start Date </span>: <span class="font-weight-400 uppercase">02/11/2017</span></li>
+								<li><i class="fa fa-calendar-check-o"></i><span class="font-weight-700"> End Date </span>: <span class="font-weight-400 uppercase">02/08/2018</span></li>
+                                <li><i class="fa fa-cogs"></i> <span class="font-weight-700"> Used Technologies</span> : <span class="font-weight-400 uppercase">Adobe Audition, Adobe Premiere</span></li>
+                            </ul>
+                            <hr>
+                            <a href="index.html#" class="waves-effect waves-light btn font-weight-700">Preview <i class="fa fa-external-link"></i></a>
+                        </div>
+                        <!-- Project Details Ends -->
+                    </div>
+                </div>
+				<!-- Project Ends -->
+                <!-- Portfolio Navigation Starts -->
+                <nav>
+                    <!-- Previous Work Icon Starts -->
+                    <span class="control-button bl-previous-work"><i class="fa fa-angle-left"></i></span>
+                    <!-- Previous Work Icon Ends -->
+                    <!-- Close Work Icon Starts -->
+					<img alt="close" src="images/close-button.png" class="control-button bl-icon-close" />
+                    <!-- Close Work Icon Ends -->
+                    <!-- Next Work Icon Starts -->
+                    <span class="control-button bl-next-work"><i class="fa fa-angle-right"></i></span>
+                    <!-- Previous Work Icon Ends -->
+                </nav>
+                <!-- Portfolio Navigation Ends -->
             </div>
+            <!-- Portfolio Panel Items Ends -->
         </div>
-            </div>
-		</div>
-		<div id="resume-section" class="resume-section panel">
-            <div class="section-container">
-			<div class="page-heading container">
-                 <span class="icon"><i class="fa fa-gear"></i></span>
-                <h2>resume</h2>
-            </div>
-			<div class="container">
-			 
-				<div class="row mb-70">
-					<!--Education-->
-					<div class="col-md-6">
-						<h3 class="subtitle">Education</h3>
+    </div>
+    <!-- Wrapper Ends -->
 
-						<div class="item">
-							<div class="date">
-								<span>2011 - 2013</span>
-							</div>
-							<div class="content">
-								<h4>Educational Specialist</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
-							</div>
-						</div>
+    <!-- Template JS Files -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.animatedheadline.js"></script>
+    <script src="js/boxlayout.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/jquery.hoverdir.js"></script>
+    <script src="js/custom.js"></script>
 
-						<div class="item">
-							<div class="date">
-								<span>2005 - 2010</span>
-							</div>
-							<div class="content">
-								<h4>Doctoral Degree</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="date">
-								<span>2001 - 2003</span>
-							</div>
-							<div class="content">
-								<h4>Master Degree</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="date">
-								<span>1998 - 2000</span>
-							</div>
-							<div class="content">
-								<h4>Bachelor Degree</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
-							</div>
-						</div>
-
-					</div><!--.col-md-6-->
-
-					<!--Experience-->
-					<div class="col-md-6 mt-50">
-						<h3 class="subtitle">Experience</h3>
-
-						<div class="item">
-							<div class="date">
-								<span>2017 - Present</span>
-							</div>
-							<div class="content">
-								<h4>Lead Web Developer</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="date">
-								<span>2014 - 2015</span>
-							</div>
-							<div class="content">
-								<h4>Senior Web Developer</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="date">
-								<span>2011 - 2012</span>
-							</div>
-							<div class="content">
-								<h4>Junior Web Developer</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="date">
-								<span>2008 - 2009</span>
-							</div>
-							<div class="content">
-								<h4>Web Developer</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
-							</div>
-						</div>
-
-					</div><!--.col-md-6-->
-				</div><!--.row-->
-				<div class="row mb-30">
-
-                            <!--Personel Skills Column Start-->
-                            <div class="col-md-6 skills">
-                                <div>
-                                    <h3 class="subtitle">Personal Skills</h3>
-                                </div>
-
-                                <!--Personel Skill Item-->
-                                <div class="skill-item">
-                                    <h4 class="progress-title">Team Work</h4>
-                                    <div class="progress">
-                                        <div class="progress-bar" data-progress-value="91" style="width: 91%;">
-                                            <div class="progress-value">91%</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!--Personel Skill Item-->
-                                <div class="skill-item">
-                                    <h4 class="progress-title">Leadership</h4>
-                                    <div class="progress">
-                                        <div class="progress-bar" data-progress-value="82" style="width: 82%;">
-                                            <div class="progress-value">82%</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!--Personel Skill Item-->
-                                <div class="skill-item">
-                                    <h4 class="progress-title">Communication</h4>
-                                    <div class="progress">
-                                        <div class="progress-bar" data-progress-value="94" style="width: 94%;">
-                                            <div class="progress-value">94%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Personel Skills Column End-->
-
-                            <!--Professional Skill Column Start-->
-                            <div class="col-md-6 skills">
-                                <div >
-                                    <h3 class="subtitle mt-30">Professional Skills</h3>
-                                </div>
-
-                                <!--Professional Skill Item-->
-                                <div class="skill-item">
-                                    <h4 class="progress-title">HTML5</h4>
-                                    <div class="progress">
-                                        <div class="progress-bar" data-progress-value="83" style="width: 83%;">
-                                            <div class="progress-value">83%</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!--Professional Skill Item-->
-                                <div class="skill-item">
-                                    <h4 class="progress-title">CSS3</h4>
-                                    <div class="progress">
-                                        <div class="progress-bar" data-progress-value="75" style="width: 75%;">
-                                            <div class="progress-value">75%</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!--Professional Skill Item-->
-                                <div class="skill-item">
-                                    <h4 class="progress-title">Javascript</h4>
-                                    <div class="progress">
-                                        <div class="progress-bar" data-progress-value="92" style="width: 92%;">
-                                            <div class="progress-value">92%</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!--Professional Skill Column End-->
-
-                        </div>
-			</div>
-            </div>
-		</div>
-		<div id="works-section" class="works-section panel" >
-           <div class="section-container">
-				<div class="page-heading container">
-					<span class="icon"><i class="fa fa-eye"></i></span>
-					<h2>Portfolio</h2>
-				</div>
-           
-			<div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="button-group filter-button-group text-center">
-                            <button data-filter="*" class="active">All</button>
-                            <button data-filter=".brand">Branding</button>
-                            <button data-filter=".design">Design</button>
-                            <button data-filter=".development">Development</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="row grid">
-                    <!-- Image-1 -->
-                    <div class="col-lg-4 col-md-6 grid-item brand">
-                        <div class="single-works-section-item ">
-                            <img src="images/portfolio/1.jpg" alt="work" class="img-fluid">
-                            <div class="overlay text-center">
-                                <div class="content">
-                                    <h3>Title Here</h3>
-                                    <p>SubTitle Here</p>
-                                    <a href="images/portfolio/1.jpg" class="image-link">
-                                        <span class="fa fa-eye"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Image-2 -->
-                    <div class="col-lg-4 col-md-6 grid-item brand">
-                        <div class="single-works-section-item">
-                            <img src="images/portfolio/2.jpg" alt="work" class="img-fluid">
-                            <div class="overlay text-center">
-                                <div class="content">
-                                    <h3>Title Here</h3>
-                                    <p>SubTitle Here</p>
-                                    <a href="images/portfolio/1.jpg" class="image-link">
-                                        <span class="fa fa-eye"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Image-3 -->
-                    <div class="col-lg-4 col-md-6 grid-item design">
-                        <div class="single-works-section-item">
-                            <img src="images/portfolio/3.jpg" alt="work" class="img-fluid">
-                            <div class="overlay text-center">
-                                <div class="content">
-                                    <h3>Title Here</h3>
-                                    <p>SubTitle Here</p>
-                                    <a href="images/portfolio/1.jpg" class="image-link">
-                                        <span class="fa fa-eye"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Image-4 -->
-                    <div class="col-lg-4 col-md-6 grid-item design">
-                        <div class="single-works-section-item">
-                            <img src="images/portfolio/4.jpg" alt="work" class="img-fluid">
-                            <div class="overlay text-center">
-                                <div class="content">
-                                    <h3>Title Here</h3>
-                                    <p>SubTitle Here</p>
-                                    <a href="images/portfolio/1.jpg" class="image-link">
-                                        <span class="fa fa-eye"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Image-5 -->
-                    <div class="col-lg-4 col-md-6 grid-item development">
-                        <div class="single-works-section-item">
-                            <img src="images/portfolio/5.jpg" alt="work" class="img-fluid">
-                            <div class="overlay text-center">
-                                <div class="content">
-                                    <h3>Title Here</h3>
-                                    <p>SubTitle Here</p>
-                                    <a href="images/portfolio/1.jpg" class="image-link">
-                                        <span class="fa fa-eye"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Image-6 -->
-                    <div class="col-lg-4 col-md-6 grid-item development">
-                        <div class="single-works-section-item">
-                            <img src="images/portfolio/6.jpg" alt="work" class="img-fluid">
-                            <div class="overlay text-center">
-                                <div class="content">
-                                    <h3>Title Here</h3>
-                                    <p>SubTitle Here</p>
-                                    <a href="images/portfolio/1.jpg" class="image-link">
-                                        <span class="fa fa-eye"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-		 </div>
-		</div>
-		<div id="blog-section" class="blog panel">
-            <div class="section-container">
-				<div class="page-heading container">
-					<span class="icon"><i class="fa fa-newspaper-o"></i></span>
-					<h2>My Blog</h2>
-				</div>
-				<div class="container">
-                <div class="row">
-                    <!-- Post-1 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="box">
-                            <div class="image">
-                                    <img src="images/blog/1.png" alt="blog post">
-                                    <a href="" class="tags">Branding</a>
-                            </div>
-                            <div class="text">
-                                    <h3><a href="">Let's start with the main HTML layout</a></h3>
-                                    <h4>By John Doe, Aout 01, 2018</h4>
-                                    <p>Lorem Ipsum has been standard. Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Post-2 -->
-                    <div class="col-md-6 col-lg-4">
-                            <div class="box">
-                                <div class="image">
-                                        <img src="images/blog/2.jpeg" alt="blog post">
-                                        <a href="" class="tags">Design</a>
-                                </div>
-                                <div class="text">
-                                        <h3><a href="">Best Design Theme Wordpress in 2018</a></h3>
-                                        <h4>By John Doe, Aout 01, 2018</h4>
-                                        <p>Lorem Ipsum has been standard. Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Post-3 -->
-                    <div class="col-md-6 col-lg-4">
-                            <div class="box">
-                                <div class="image">
-                                        <img src="images/blog/3.jpeg" alt="blog post">
-                                        <a href="" class="tags">Coding</a>
-                                </div>
-                                <div class="text">
-                                        <h3><a href="">How To Build A Freamwork scratch</a></h3>
-                                        <h4>By John Doe, Aout 01, 2018</h4>
-                                        <p>Lorem Ipsum has been standard. Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Post-3 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="box">
-                            <div class="image">
-                                    <img src="images/blog/4.jpeg" alt="blog post">
-                                    <a href="" class="tags">Devlompement</a>
-                            </div>
-                            <div class="text">
-                                    <h3><a href="">How To Build A Freamwork scratch</a></h3>
-                                    <h4>By John Doe, Aout 01, 2018</h4>
-                                    <p>Lorem Ipsum has been standard. Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Post-3 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="box">
-                            <div class="image">
-                                    <img src="images/blog/5.png" alt="blog post">
-                                    <a href="" class="tags">Web</a>
-                            </div>
-                            <div class="text">
-                                    <h3><a href="">The result of this tutorial will be working </a></h3>
-                                    <h4>By John Doe, Aout 01, 2018</h4>
-                                    <p>Lorem Ipsum has been standard. Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Post-3 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="box">
-                            <div class="image">
-                                    <img src="images/blog/6.jpeg" alt="blog post">
-                                    <a href="" class="tags">Coding</a>
-                            </div>
-                            <div class="text">
-                                    <h3><a href="">How To Build A Freamwork scratch</a></h3>
-                                    <h4>By John Doe, Aout 01, 2018</h4>
-                                    <p>Lorem Ipsum has been standard. Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-
-            </div>
-		</div>
-		<div id="contacts-section" class="panel contact">
-            <div class="section-container">
-				<div class="page-heading container">
-					 <span class="icon"><i class="fa fa-envelope"></i></span>
-					<h2>Contact Me</h2>
-				</div>
-				
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-
-                        <form>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <input type="text" class="form-control" placeholder="Name">
-                                </div>
-                                <div class="col-sm-6">
-                                    <input type="email" class="form-control" placeholder="Email">
-                                </div>
-                                <div class="col-sm-12">
-                                    <input type="text" class="form-control" placeholder="Subject">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
-                            </div>
-                            <button class="btn btn-block" type="submit">Send Now!</button>
-                        </form>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="info">
-                            <span class="fa fa-map-marker"></span>
-                            <p>Street 221B Baker Street,NY, paradisematic
-                                <br>
-                                London, UK </p>
-
-                            <span class="fa fa-mobile"></span>
-                            <p>(+1) 555-5555
-                                <br>
-                             (+1) 555-5555</p>
-
-                            <span class="fa fa-at"></span>
-                            <p>contact@Beeskip.com <br> Beeskip.com</p>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-			
-         </div>
-		</div>
-		
-				 
-
-	</div> <!-- End .Page -->
-	
-	<!-- jQuery Scripts -->
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/typed.js"></script>
-	<script src="js/jquery.appear.js"></script>
-	<script src="js/imagesloaded.pkgd.min.js"></script>
-	<script src="js/isotope.pkgd.min.js"></script>
-	<script src="js/magnific-popup.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.counterup.min.js"></script>
-	
-	<!-- Main Scripts -->
-	<script src="js/script.js"></script> 
-	
+    <!-- Live Style Switcher JS File - only demo -->
+    <script src="js/styleswitcher.js"></script>
 </body>
+
 </html>
-		
